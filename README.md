@@ -29,5 +29,5 @@ The Detection Lab project aimed to establish a controlled environment for simula
 *Ref 1: Threat Hunting Dashboard*
 
 ![lsass_cred_dump_detection](https://github.com/user-attachments/assets/f332e549-ce21-4849-94e5-9ac3edf933e9)
-*Ref 2: LSASS Dumping Detection*
+*Ref 2: LSASS Dump Detection*
 
