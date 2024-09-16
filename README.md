@@ -24,10 +24,10 @@ The Detection Lab project aimed to establish a controlled environment for simula
 - Zeek for a comprehensive view and analysis of the network activity. It allows to complete Suricata logs.
 
 ## Steps
-drag & drop screenshots here or use imgur and reference them using imgsrc
 
-Every screenshot should have some text explaining what the screenshot is about.
+![Dashboard](https://github.com/user-attachments/assets/76ffab8b-f12f-4fc2-ad92-37002adc3653)
+*Ref 1: Threat Hunting Dashboard*
 
-Example below.
+![lsass_cred_dump_detection](https://github.com/user-attachments/assets/f332e549-ce21-4849-94e5-9ac3edf933e9)
+*Ref 2: LSASS Dumping Detection*
 
-*Ref 1: Network Diagram*
