@@ -11,7 +11,7 @@ The Detection Lab project aimed to establish a controlled environment for simula
 - Ability to generate and recognize attack signatures and patterns.
 - Enhanced knowledge of network protocols and security vulnerabilities.
 - Development of critical thinking and problem-solving skills in cybersecurity.
-- Tuning up of existing IDS and Agents default Rules to narrow down false positives.
+- Tuning up of IDS and Agents default Rules to narrow down false positives.
 - Understanding and creation of Custom Rules in Wazuh, for specific log ingestion in the System.
 
 ### Tools Used
