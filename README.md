@@ -21,7 +21,7 @@ The Detection Lab project aimed to establish a controlled environment for simula
 - Telemetry generation tools to create realistic network traffic and attack scenarios.
 - Sysmon for detailed information about process creations, network connections and real time changes to filesystem in Windows endpoints.
 - Suricata configured as an IDS, for real-time threat detection and threat hunting.
-- Zeek for a comprehensive view and analysis of the network activity. It allows to complete Suricata logs.
+- Zeek for a comprehensive view and analysis of the network activity. It allows to supplement Suricata logs.
 
 ## Steps
 
@@ -30,4 +30,17 @@ The Detection Lab project aimed to establish a controlled environment for simula
 
 ![lsass_cred_dump_detection](https://github.com/user-attachments/assets/f332e549-ce21-4849-94e5-9ac3edf933e9)
 *Ref 2: LSASS Dump Detection*
+
+1. Provision the SIEM VM in Proxmox with the correct NW configuration.
+2. Installation of all 3 Wazuh components in one VM.
+3. FW Rules adjustment to let agents transferring telemetry data.
+4. Provision of the IDS VM in Proxmox with the correct NW configuration and an addtional vNIC for Network TAP.
+5. Installation and configuration of Suricata.
+6. Configuration of a Soft-TAP service with daemonlogger in Proxmox to forward all traffic to Suricata VM. (Planning on change this and apply Port Mirroring directly with the Managed Switch later)
+7. Suricata event forwarding to Wazuh with the Wazuh agent.
+8. Provision of the NSM VM in Proxmox with the correct NW configuration and an addtional vNIC for Network TAP.
+9. Installation and configuration of Zeek.
+10. Configuration of a Soft-TAP service with daemonlogger in Proxmox to forward all traffic to Zeek VM.
+11. Zeek event forwarding to Wazuh with the Wazuh agent.
+    
 
